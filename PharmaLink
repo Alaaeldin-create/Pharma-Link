@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PharmaLink</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 20px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #333;
+    }
+    footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #333;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .search-input {
+      width: 80%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .search-button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .search-button:hover {
+      background-color: #45a049;
+    }
+    .alert {
+      background-color: #ffdddd;
+      border-left: 6px solid #f44336;
+      padding: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">News and Updates</a></li>
+        <li><a href="#">Alerts</a></li>
+        <li><a href="#">Collaborate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Welcome to PharmaLink</h1>
+      <p>Stay up-to-date with the latest information and changes in the pharmaceutical industry.</p>
+    </section>
+ <section>
+      <h2>Pharmaceutical Industry Guidelines</h2>
+      <div class="guidelines">
+        <a href="https://www.picscheme.org/" target="_blank">PIC/S</a>
+        <a href="https://www.ema.europa.eu/" target="_blank">EMA</a>
+        <a href="https://www.fda.gov/" target="_blank">US FDA</a>
+        <a href="https://www.who.int/" target="_blank">WHO</a>
+        <a href="https://www.iso.org/" target="_blank">ISO</a>
+
+    <section>
+      <h2>Featured Updates</h2>
+      <div class="alert">
+        <strong>Alert:</strong> New regulations for drug approvals will take effect next month. Stay tuned for more details.
+      </div>
+      <div class="alert">
+        <strong>Update:</strong> Our latest study on biosimilar efficacy is now published. Read more <a href="#">here</a>.
+      </div>
+    </section>
+
+    <section>
+      <h2>Quick Search</h2>
+      <input type="text" class="search-input" placeholder="Enter your search term...">
+      <button class="search-button" onclick="searchFunction()">Search</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 PharmaLink</p>
+  </footer>
+
+  <script>
+    function searchFunction() {
+      let query = document.querySelector('.search-input').value;
+      alert('Searching for: ' + query);
+    }
+  </script>
+</body>
+</html>
